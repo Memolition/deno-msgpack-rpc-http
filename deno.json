@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "lib": ["dom", "esnext"]
+  },
+  "tasks": {
+    "start": "deno run --allow-net src/rpc-server.ts",
+    "dev": "deno run --watch --allow-net src/rpc-server.ts"
+  },
+  "imports": {
+    "@std/io": "jsr:@std/io@^0.224.1",
+    "msgpackr": "https://deno.land/x/msgpackr@v1.10.2/index.js"
+  }
+}

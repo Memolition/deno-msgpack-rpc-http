@@ -1,0 +1,31 @@
+{
+  "version": "3",
+  "packages": {
+    "specifiers": {
+      "jsr:@std/bytes@^1.0.0-rc.3": "jsr:@std/bytes@1.0.0",
+      "jsr:@std/io@^0.224.1": "jsr:@std/io@0.224.1"
+    },
+    "jsr": {
+      "@std/bytes@1.0.0": {
+        "integrity": "9392e72af80adccaa1197912fa19990ed091cb98d5c9c4344b0c301b22d7c632"
+      },
+      "@std/io@0.224.1": {
+        "integrity": "73de242551a5c0965eb33e36b1fc7df4834ffbc836a1a643a410ccd11253d6be",
+        "dependencies": [
+          "jsr:@std/bytes@^1.0.0-rc.3"
+        ]
+      }
+    }
+  },
+  "remote": {
+    "https://deno.land/x/msgpackr@v1.10.2/index.js": "876a1a157bf214a09c3553a9bf2bfcd59ea5ba6cfaca86923d459c053c991643",
+    "https://deno.land/x/msgpackr@v1.10.2/iterators.js": "ccff09b665e3aef7fd707883eec63241aa100ec7c1956d6f9fc4c902779525fd",
+    "https://deno.land/x/msgpackr@v1.10.2/pack.js": "6d825cf050b89194e2c4f16e72282af6e8f63bdf6769ff0f2302af09b832d726",
+    "https://deno.land/x/msgpackr@v1.10.2/unpack.js": "31c84f9fea6b2cb1b7eec9575a6c5855999f5a90e25c3fe38688db9a6e19990d"
+  },
+  "workspace": {
+    "dependencies": [
+      "jsr:@std/io@^0.224.1"
+    ]
+  }
+}
